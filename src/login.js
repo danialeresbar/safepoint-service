@@ -27,7 +27,7 @@ const login = (url, user, password) => {
     })
     .catch(function (error) {
         console.log(error);
-    });   
+    });
 }
 
 module.exports = {
