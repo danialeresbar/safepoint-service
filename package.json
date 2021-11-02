@@ -1,0 +1,20 @@
+{
+  "name": "safepoint-service",
+  "version": "1.0.0",
+  "description": "This service aims to test Safepoint website quota generation times",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/danialeresbar/safepoint-service.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/danialeresbar/safepoint-service/issues"
+  },
+  "homepage": "https://github.com/danialeresbar/safepoint-service#readme"
+}
