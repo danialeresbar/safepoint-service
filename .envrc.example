@@ -1,0 +1,16 @@
+# GENERAL
+export CARRIER_USER=userbase64_setbyjob
+export CARRIER_PASSWORD=passwordbase64_setbyjob
+export ENV=develop
+
+# SERVICE MODE
+export PORT=50051
+
+# CARRIER
+export SAFEPOINTUSER=your-admin
+export SAFEPOINTPASSWORD=your-password
+
+# SCRIPT MODE
+export ID_CARRIER=setbyjob
+export UUID_PROCESS=setbyjob
+export VOLUME_PATH=/home/username/volume-path
