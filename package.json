@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/danialeresbar/safepoint-service/issues"
   },
-  "homepage": "https://github.com/danialeresbar/safepoint-service#readme"
+  "homepage": "https://github.com/danialeresbar/safepoint-service#readme",
+  "dependencies": {
+    "axios": "^0.24.0"
+  }
 }
