@@ -26,9 +26,10 @@ const {
     )
     
     const options = {
-        host: 'uat.safepointdc.com/IntelAgent/api/Login/UserLogin',
+        host: 'uat.safepointdc.com',
         port: 443,
         method: 'POST',
+        path: '/IntelAgent/api/Login/UserLogin',
         headers: {
             'Content-Type': 'application/json',
             'Content-Length': data.length
