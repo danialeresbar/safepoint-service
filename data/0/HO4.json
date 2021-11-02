@@ -1,0 +1,86 @@
+{
+  "agentCredential": {
+    "userName": "agentname1817",
+    "password": "Pass@123"
+  },
+  "lobType": "FLAdvantageHomeowners",
+  "accountDetails": {
+    "firstName": "Test",
+    "lastName": "FLHO4",
+    "name": "Test FLHO",
+    "birthDate": "2000-01-01",
+    "state": "FL",
+    "email": "Test@us.com",
+    "phone": "1234567890",
+    "address1": "102 Bluff Ave Sw",
+    "address2": "",
+    "city": "Branford",
+    "zipCode": "32008",
+    "distanceToHydrant": "Within1000ft"
+  },
+  "dwellingDetails": {
+    "formType": "HO4",
+    "buildingType": "D",
+    "sprinkler": "Neither",
+    "fireAlarm": "Local",
+    "yearBuilt": "1921",
+    "numberOfStories": "1",
+    "construction": "Frame",
+    "burglarAlarm": "None",
+    "foundationType": "C",
+    "electricalSystem": "Breaker",
+    "squareFeet": "2184",
+    "primaryHeatType": "Electric",
+    "securedCommunity": "None",
+    "lossMitigationSelect": "0",
+    "roofType": "ShinglesAsphaltOrComposition",
+    "plumbingType": "Copper",
+    "numberOfAmps": "100",
+    "wiring": "Copper",
+    "secondaryWaterResistance": "N",
+    "roofCover": "NonFBCEquivalent",
+    "deductible": "2500",
+    "terrain": "B",
+    "roofDeckAttachment": "A6d@612",
+    "roofGeometry": "Gable",
+    "openingProtection": "None",
+    "HurricaneDeductibleHO46": "500",
+
+
+    "replacementCostContents": {
+      "indicator": "0"
+    },
+    "roofToWallAttachment": "ToeNails",
+
+    "personalInjury": "0",
+    "ordinanceOrLaw": {
+      "limit": "0.25"
+    },
+    "coverageELiability": {
+      "limit": "300000"
+    },
+
+    "sectionICoverages": {
+      "homeComputerCoverage": "1000",
+      "dogLiability": "0",
+      "dogLiabilityBiteHistory": "0",
+      "dogLiabilityBreed": "Akitas"
+    },
+    "waterBackupAndSumpOverflow": "0",
+    "carportsPoolCages": {
+      "yearConstructed": "1921",
+      "description": "Carport",
+      "class": "ClassA"
+    },
+
+    "numberOfFloor": "1",
+    "numberOfUnits": "1",
+    "numberOfUnitsInBuilding": "1-4",
+    "identityFraudExpenseCoverage": "0",
+    "CoverageCPersonalPropertyHO46": {
+      "Limit": "2500"
+
+    }
+
+  }
+}
