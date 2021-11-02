@@ -1,0 +1,109 @@
+{
+  "agentCredential": {
+    "userName": "agentname1817",
+    "password": "Pass@123"
+  },
+  "lobType": "FLAdvantageHomeowners",
+  "accountDetails": {
+    "firstName": "Test",
+    "lastName": "FLHO6",
+    "name": "Test FLHO",
+    "birthDate": "2000-01-01",
+    "state": "FL",
+    "email": "Test@us.com",
+    "phone": "1234567890",
+    "address1": "102 Bluff Ave Sw",
+    "address2": "",
+    "city": "Branford",
+    "zipCode": "32008",
+    "distanceToHydrant": "Within1000ft"
+  },
+  "dwellingDetails": {
+    "formType": "HO6",
+    "occupancyType": "Owner",
+    "useType": "Primary",
+    "buildingType": "D",
+    "sprinkler": "Neither",
+    "fireAlarm": "Local",
+    "yearBuilt": "1921",
+    "numberOfFamilies": "1",
+    "numberOfStories": "1",
+    "construction": "Frame",
+    "burglarAlarm": "None",
+    "foundationType": "C",
+    "electricalSystem": "Breaker",
+    "exteriorWallType": "Aluminum/Metal",
+    "squareFeet": "2184",
+    "primaryHeatType": "Electric",
+    "securedCommunity": "None",
+    "purchaseDate": "2021-01-01",
+    "lossMitigationSelect": "0",
+    "roofType": "ShinglesAsphaltOrComposition",
+    "plumbingType": "Copper",
+    "numberOfAmps": "100",
+    "wiring": "Copper",
+    "secondaryWaterResistance": "N",
+    "roofCover": "NonFBCEquivalent",
+    "deductible": "2500",
+    "terrain": "B",
+    "roofDeckAttachment": "A6d@612",
+    "roofGeometry": "Gable",
+    "openingProtection": "None",
+    "hurricaneDeductibleHO46": "500",
+    "SinkholeIndicator": "",
+    "coverageA": {
+      "limit": "35000"
+    },
+
+    "specialPersonalPropertyCoverage": {
+      "indicator": "0"
+    },
+    "replacementCostContents": {
+      "indicator": "0"
+    },
+    "roofToWallAttachment": "ToeNails",
+    "lossAssessment": {
+      "limit": "2000"
+    },
+    "personalInjury": "0",
+    "ordinanceOrLaw": {
+      "limit": "0.25"
+    },
+    "CoverageCPersonalPropertyHO46": {
+      "limit": "15000"
+    },
+    "coverageELiability": {
+      "limit": "300000"
+    },
+    "coverageFMedical": {
+      "limit": "2500"
+    },
+    "sectionICoverages": {
+      "homeComputerCoverage": "1000",
+      "dogLiability": "0",
+      "dogLiabilityBiteHistory": "0",
+      "dogLiabilityBreed": "Akitas"
+    },
+    "waterBackupAndSumpOverflow": "0",
+    "carportsPoolCages": {
+      "limit": "0",
+      "yearConstructed": "1921",
+      "description": "Carport",
+      "class": "ClassA"
+    },
+    "sinkholeDeductible": "0",
+    "numberOfFloor": "1",
+    "numberOfUnits": "1",
+    "numberOfUnitsInBuilding": "1-4",
+    "identityFraudExpenseCoverage": "0",
+
+    "UnitsRegularlyRentedToOthers": {
+      "Indicator": "",
+      "UnitOwnersCoverageAIndicator": ""
+    },
+    "risk": {
+      "equipmentBreakdown": "0"
+    }
+
+  }
+}
