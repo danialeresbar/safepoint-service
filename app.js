@@ -1,10 +1,17 @@
-const https = require('https');
 const { error, log } = console;
 const {
     decodeBase64,
     getBusinessType,
     writeJsonFile
 } = require('./src/utils');
+
+const login = require('./src/login');
+const ho3 = require('./src/ho3');
+const ho4 = require('./src/ho4');
+const ho6 = require('./src/ho6');
+
+const BASE_URL = 'https://uat.safepointdc.com';
+const QUOTE_ENDPOINT = 'IntelAgent/api/Quote/CreateQuote';
 
 (async() => {
     const {
@@ -15,60 +22,52 @@ const {
         SAFEPOINTPASSWORD,
         ID_CARRIER,
         UUID_PROCESS,
-        VOLUME_PATH
+        VOLUME_PATH,
+        BUSINESS_TYPE
     } = process.env;
 
-    const data = new TextEncoder().encode(
-        JSON.stringify({
-            "userName": SAFEPOINTUSER,
-            "password": SAFEPOINTPASSWORD
-        })
-    )
+    try {
+        const HO3 = require(`${VOLUME_PATH}/${UUID_PROCESS}/HO3.json`);
+        const HO4 = require(`${VOLUME_PATH}/${UUID_PROCESS}/HO4.json`);
+        const HO6 = require(`${VOLUME_PATH}/${UUID_PROCESS}/HO6.json`);
     
-    const options = {
-        host: 'uat.safepointdc.com',
-        port: 443,
-        method: 'POST',
-        path: '/IntelAgent/api/Login/UserLogin',
-        headers: {
-            'Content-Type': 'application/json',
-            'Content-Length': data.length
+        login.login(BASE_URL, SAFEPOINTUSER, SAFEPOINTPASSWORD);
+
+        // Quoting according to the business type
+        switch (BUSINESS_TYPE) {
+            case 'HO3':
+                ho3.ho3(HO3, `${BASE_URL}/${QUOTE_ENDPOINT}`)
+                break;
+
+            case 'HO4':
+
+                break;
+        
+            case 'HO6':
+
+                break;
+
+            default:
+                break;
         }
+
+        const quoteOption = {
+            quote_id: '-',
+            carrier_id: '-',
+            quote_carrier_id: '-',
+            base_price: 0,
+            surcharges: 0,
+            total_price: 0,
+            selected: false,
+            process_time: 0,
+            error_details: '',
+            result_status: 1,
+            url_quote: '',
+            url_screenshot_success: '',
+            url_screenshot_failed: ''
+        };
+
+    } catch (error) {
+        error(error);
     }
-    
-    const req = https.request(options, (res) => {
-        console.log(`statusCode: ${res.statusCode}`);
-        console.log('headers:', res.headers);
-      
-        res.on('data', d => {
-          process.stdout.write(d)
-        });
-      });
-    
-    req.on('error', error => {
-        console.error(error);
-    });
-    
-    req.write(data);
-    req.end();
 })();
-
-function doQuoteRequest(params) {
-
-    // const quoteOPtion = {
-    //     quote_id: '-',
-    //     carrier_id: '-',
-    //     quote_carrier_id: '-',
-    //     base_crice: 0,
-    //     surcharges: 0,
-    //     total_price: 0,
-    //     selected: false,
-    //     process_time: 0,
-    //     error: errorMessage,
-    //     error_details: errorDetailMessage,
-    //     result_status: resultStatus,
-    //     url_quote: '',
-    //     url_screenshot_success: '',
-    //     url_screenshot_failed: ''
-    // }
-}
