@@ -24,7 +24,7 @@ const QUOTE_ENDPOINT = 'IntelAgent/api/Quote/CreateQuote';
         BUSINESS_TYPE
     } = process.env;
 
-    try {    
+    try {
         const loginResponse = login.login(BASE_URL, SAFEPOINTUSER, SAFEPOINTPASSWORD);
 
         const quoteOption = {
