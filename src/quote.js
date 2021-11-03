@@ -2,16 +2,43 @@
 
 const axios = require('axios');
 const fs = require('fs')
-const { error, log } = console;
 
-const ho3 = (body, url, token) =>{
-    log('::::: HO3 :::::');
+const {
+    UUID_PROCESS,
+    VOLUME_PATH,
+    BUSINESS_TYPE
+} = process.env;
+
+const inputHO3 = require(`../${VOLUME_PATH}/${UUID_PROCESS}/HO3.json`);
+const inputHO4 = require(`../${VOLUME_PATH}/${UUID_PROCESS}/HO4.json`);
+const inputHO6 = require(`../${VOLUME_PATH}/${UUID_PROCESS}/HO6.json`);
+
+const { log } = console;
+
+const quote = (url, token) =>{
+    log(`::::: ${BUSINESS_TYPE} ::::: `);
+
+    let body = {}
 
     const headers = {
         'accept': 'application/json',
         'Content-Type': 'application/json',
         'Authorization': `Bearer ${token}`
     };
+
+    switch (BUSINESS_TYPE) {
+        case 'HO4':
+            body = inputHO4;
+            break;
+
+        case 'HO6':
+            body = inputHO6;
+            break;
+
+        default:
+            body = inputHO3;
+            break;
+    }
 
     try {
         return axios.post(url, body, {headers: headers}).then((response) => {
@@ -37,5 +64,5 @@ const ho3 = (body, url, token) =>{
 }
 
 module.exports = {
-	ho3
+	quote
 };
