@@ -6,9 +6,7 @@ const {
 } = require('./src/utils');
 
 const login = require('./src/login');
-const ho3 = require('./src/ho3');
-const ho4 = require('./src/ho4');
-const ho6 = require('./src/ho6');
+const quote = require('./src/quote');
 
 const BASE_URL = 'https://uat.safepointdc.com';
 const QUOTE_ENDPOINT = 'IntelAgent/api/Quote/CreateQuote';
@@ -26,30 +24,8 @@ const QUOTE_ENDPOINT = 'IntelAgent/api/Quote/CreateQuote';
         BUSINESS_TYPE
     } = process.env;
 
-    try {
-        const HO3 = require(`${VOLUME_PATH}/${UUID_PROCESS}/HO3.json`);
-        const HO4 = require(`${VOLUME_PATH}/${UUID_PROCESS}/HO4.json`);
-        const HO6 = require(`${VOLUME_PATH}/${UUID_PROCESS}/HO6.json`);
-    
-        login.login(BASE_URL, SAFEPOINTUSER, SAFEPOINTPASSWORD);
-
-        // Quoting according to the business type
-        switch (BUSINESS_TYPE) {
-            case 'HO3':
-                ho3.ho3(HO3, `${BASE_URL}/${QUOTE_ENDPOINT}`)
-                break;
-
-            case 'HO4':
-
-                break;
-        
-            case 'HO6':
-
-                break;
-
-            default:
-                break;
-        }
+    try {    
+        const loginResponse = login.login(BASE_URL, SAFEPOINTUSER, SAFEPOINTPASSWORD);
 
         const quoteOption = {
             quote_id: '-',
@@ -66,6 +42,18 @@ const QUOTE_ENDPOINT = 'IntelAgent/api/Quote/CreateQuote';
             url_screenshot_success: '',
             url_screenshot_failed: ''
         };
+
+        // Solving promise
+        loginResponse.then((token) => {
+            log('::::: QUOTING PROCESS :::::');
+            const start = Date.now();
+            const quoteResponse = quote.quote(`${BASE_URL}/${QUOTE_ENDPOINT}`, token);
+            quoteResponse.then((quoteResult) => {
+                log(quoteResult);
+                const duration = Date.now() - start;
+                log(duration);
+            });
+        });
 
     } catch (error) {
         error(error);
