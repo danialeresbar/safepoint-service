@@ -27,6 +27,8 @@ const login = (url, user, password) => {
             } else {
                 log('Login attempt failed')
             }
+        }).catch(function (error) {
+            log(error)
         });
     } catch (error) {
         throw {
