@@ -1,3 +1,455 @@
-{
-    
-}
+[
+    {
+        "matching": {
+            "Flat": "Flat",
+            "Gable": "Gable",
+            "Hip": "Hip",
+            "Other": "N/A"
+        },
+        "new_question": "prop_roof_shape",
+        "original_question": "prop_roof_shape",
+        "default_value": "N/A",
+        "possible_values": [
+            "Hip",
+            "Gable",
+            "Flat",
+            "N/A"
+        ],
+        "use_default_value_for_undefined": true
+    },
+    {
+        "matching": {
+            "Frame": "Frame",
+            "Masonry": "Masonry",
+            "Masonry-veneer": "Masonry Veneer",
+            "Reinforced concrete":"__no_supported__"   
+        },
+        "new_question": "prop_construction_type",
+        "original_question": "prop_construction_type",
+        "default_value": "__no_supported__",
+        "possible_values": [
+            "Frame",
+            "Masonry",
+            "Masonry Veneer",
+            "Aluminium Siding",
+            "Plastic Siding",
+            "Fire Resistive",
+            "Aluminium Siding",
+            "Masonry Non-Combustible",
+            "Non-Combustible",
+            "Hardiplank"
+        ],
+        "use_default_value_for_undefined": true
+    },
+    {
+        "matching": {
+            "FBC Equivalent": "FBC Equivalent",
+            "Non- FBC Equivalent": "Non-FBC Equivalent",
+            "Concrete Roof Deck": "Reinforced Concrete Roof Deck",
+            "Reinforced Concrete Roof Deck": "Reinforced Concrete Roof Deck",
+            "Other": "Non-FBC Equivalent"
+        },
+        "new_question": "wm_roof_cover",
+        "original_question": "wm_roof_cover",
+        "default_value": "N/A",
+        "possible_values": [
+            "FBC Equivalent",
+            "Non-FBC Equivalent",
+            "Reinforced Concrete Roof Deck",
+            "N/A"
+        ],
+        "use_default_value_for_undefined": true        
+    },
+    {
+        "matching": {
+            "A1 - Hurricane": "Class A",
+            "A2 - Hurricane": "Class A",
+            "A3 - Hurricane": "Class A",
+            "B1 - Basic": "Class B",
+            "B2 - Basic": "Class B",
+            "B3 - Basic": "Class B",
+            "None - Unknown": "None"
+        },
+        "new_question": "wm_opening_protection",
+        "original_question": "wm_opening_protection",
+        "default_value": "None",
+        "possible_values": [
+            "Class A",
+            "Class B",
+            "None"
+        ],
+        "use_default_value_for_undefined": true        
+    },
+    {
+        "matching": {
+            "Clips": "Clips",
+            "Double Wraps": "Double Wraps",
+            "Single Wraps": "Single Wraps",
+            "Structural/Reinforced Concrete": "N/A",
+            "Toe Nails": "Toe Nails",
+            "Unknown": "Toe Nails"
+        },
+        "new_question": "wm_roof_wall_connection",
+        "original_question": "wm_roof_wall_connection",
+        "default_value": "Toe Nails",
+        "possible_values": [
+            "Toe Nails",
+            "Clips",
+            "Single Wraps",
+            "Double Wraps",
+            "N/A"
+        ],
+        "use_default_value_for_undefined": true        
+    },
+    {
+        "matching": {
+            "A - 6d @ 6/12": "A - 6d @ 6\"/12",
+            "B - 8d @ 6/12": "B - 8d @ 6\"/12",
+            "C - 8d @ 6/6": "C - 8d @ 6\"/6",
+            "D 8d @ 6/6 Dimensional Lumber Deck": "C - 8d @ 6\"/6",
+            "Reinforced Concrete Roof Deck": "Reinforced Concrete Roof Deck",
+            "Other Roof Deck": "N/A"
+        },
+        "new_question": "wm_roof_deck_attachment",
+        "original_question": "wm_roof_deck_attachment",
+        "default_value": "C - 8d @ 6\"/6",
+        "possible_values": [
+            "A - 6d @ 6\"/12",
+            "B - 8d @ 6\"/12",
+            "C - 8d @ 6\"/6",
+            "Reinforced Concrete Roof Deck",
+            "Wood Deck - Type II only",
+            "Metal Deck - Type II or III",
+            "N/A"
+        ],
+        "use_default_value_for_undefined": true        
+    },
+    {
+        "matching": {
+            "No": "No",
+            "Yes": "Yes"
+        },
+        "new_question": "wm_swr",
+        "original_question": "wm_swr",
+        "default_value": "No",
+        "possible_values": [
+            "No",
+            "Yes",
+            "N/A"
+        ],
+        "use_default_value_for_undefined": true        
+    },
+    {
+        "matching": {
+            "1%": "1",
+            "2%": "2",
+            "5%": "5",
+            "10%": "10",
+            "15%": "15",
+            "20%": "20",
+            "Excluded": "__no_supported__"
+        },
+        "new_question": "coverage_b",
+        "original_question": "coverage_b",
+        "default_value": "2%",
+        "possible_values": [
+            "1",
+            "2",
+            "5",
+            "10",
+            "15",
+            "20"
+        ],
+        "use_default_value_for_undefined": true        
+    },{
+        "matching": {
+            "25%": "25",
+            "30%": "30",
+            "35%": "35",
+            "40%": "40",
+            "45%": "45",
+            "50%": "50",
+            "55%": "55",
+            "60%": "60",
+            "65%": "65",
+            "70%": "70",
+            "75%": "75",
+            "Excluded": "0"
+        },
+        "new_question": "coverage_c",
+        "original_question": "coverage_c",
+        "default_value": "25",
+        "possible_values": [
+            "0",
+            "25",
+            "30",
+            "35",
+            "40",
+            "45",
+            "50",
+            "55",
+            "60",
+            "65",
+            "70",
+            "75"
+        ],
+        "use_default_value_for_undefined": true        
+    },
+    {
+        "matching": {
+            "500": "500",
+            "1000": "1000",
+            "2000": "2000",
+            "2500": "2500",
+            "5000": "5000"
+        },
+        "new_question": "deductibles_aop",
+        "original_question": "deductibles_aop",
+        "default_value": "2500",
+        "possible_values": [
+            "500",
+            "1000",
+            "1500",
+            "2000",
+            "2500",
+            "5000",
+            "7500",
+            "10000"
+        ],
+        "use_default_value_for_undefined": true        
+    },
+    {
+        "matching": {
+            "100000": "100000",
+            "300000": "300000",
+            "500000": "500000"
+        },
+        "new_question": "coverage_e_l",
+        "original_question": "coverage_e_l",
+        "default_value": "300000",
+        "possible_values": [
+            "100000",
+            "200000",
+            "300000",
+            "500000"
+        ],
+        "use_default_value_for_undefined": true        
+    },
+    {
+        "matching": {
+            "1%": "1%",
+            "2%": "2%",
+            "5%": "5%",
+            "10%": "10%",
+            "15%": "10%",
+            "20%": "10%"
+        },
+        "new_question": "deductibles_hurricane_ho3",
+        "original_question": "deductibles_hurricane",
+        "default_value": "2%",
+        "possible_values": [
+            "Ex Wind",
+            "500",
+            "1000",
+            "1%",
+            "2%",
+            "3%",
+            "4%",
+            "5%",
+            "10%"
+        ],
+        "use_default_value_for_undefined": true        
+    },
+    {
+        "matching": {
+            "1000": "1000",
+            "2000": "2500",
+            "2500": "2500",
+            "5000": "5000" 
+        },
+        "new_question": "coverage_f_m",
+        "original_question": "coverage_f_m",
+        "default_value": "2500",
+        "possible_values": [
+            "1000",
+            "2500",
+            "5000"
+        ],
+        "use_default_value_for_undefined": true        
+    },
+    {
+        "matching": {
+            "Flat": "Flat",
+            "Gable": "Gable, Moderate Pitch",
+            "Hip": "Hip, Moderate Pitch",
+            "Other": "Flat"
+        },
+        "new_question": "prop_roof_shape_replacement_costs",
+        "original_question": "prop_roof_shape",
+        "default_value": "Gable",
+        "possible_values": [
+            "Flat",
+            "Gable, Moderate Pitch",
+            "Gable, Slight Pitch",
+            "Gable, Steep Pitch",
+            "Gambrel",
+            "Hip, Moderate Pitch",
+            "Hip, Slight Pitch",
+            "Hip, Steep Pitch",
+            "Mansard",
+            "Shed",
+            "Turret, Moderate Pitch",
+            "Turret, Slight Pitch",
+            "Turret, Steep Pitch"
+        ],
+        "use_default_value_for_undefined": true
+    },
+    {
+        "matching": {
+            "Primary": "Primary",
+            "Secondary": "Secondary",
+            "Seasonal": "Seasonal"
+        },
+        "new_question": "prop_usage",
+        "original_question": "prop_usage",
+        "default_value": "Primary",
+        "possible_values": [
+            "Primary",
+            "Rental",
+            "Seasonal",
+            "Secondary",
+            "Farm or Ranch",
+            "Under Construction"
+        ],
+        "use_default_value_for_undefined": true        
+    },
+    {
+        "matching": {
+            "owner": "Owner",
+            "tenant": "Tenant"
+        },
+        "new_question": "prop_who_live",
+        "original_question": "prop_who_live",
+        "default_value": "Owner",
+        "possible_values": [
+            "Owner",
+            "Tenant",
+            "Vacant",
+            "Unoccupied"
+        ],
+        "use_default_value_for_undefined": true        
+    },
+    {
+        "matching": {
+            "3-Tab Shingle": "Shingles: Metal",
+            "Architectural Shingle": "Shingles: Wood or Wood Shake",
+            "Metal": "Metal: Standing Seam",
+            "Reinforced Concrete": "Built-Up: Concrete Fill",
+            "Rolled Roof": "Other",
+            "Tile": "Tile: Flat Slate"
+        },
+        "new_question": "prop_roof_material",
+        "original_question": "prop_roof_material",
+        "default_value": "__no_supported__",
+        "possible_values": [
+            "Shingles: Wood or Wood Shake",
+            "Shingles: Metal",
+            "Shingles: Solar",
+            "Tile: Flat Slate",
+            "Tile: Flat Concrete Clay or Composite",
+            "Tile: Flat Metal",
+            "Tile: S Curve Concrete Clay or Composite",
+            "Metal: Light Panels Slate",
+            "Metal: Standing Seam",
+            "Built-Up: Not Ballasted",
+            "Built-Up: TRoof Ballasted",
+            "Built-Up: Single Ply membrane - NOT Ballasted/Stabilized",
+            "Built-Up: Single Ply membrane - Roof Ballasted",
+            "Built-Up: Concrete Fill",
+            "Other"
+        ],
+        "use_default_value_for_undefined": true
+    },
+
+    {
+        "matching": {
+            "Central": "Central Monitoring Station",
+            "Local": "Fire Station",
+            "None": "None"
+        },
+        "new_question": "fire_alarm",
+        "original_question": "fire_alarm",
+        "default_value": "None",
+        "possible_values": [
+            "None",
+            "Fire Station",
+            "Central Monitoring Station"
+        ],
+        "use_default_value_for_undefined": true        
+    },
+
+    {
+        "matching": {
+            "Central": "Central Monitoring Station",
+            "Local": "Local",
+            "None": "None"
+        },
+        "new_question": "burglar_alarm",
+        "original_question": "burglar_alarm",
+        "default_value": "None",
+        "possible_values": [
+            "None",
+            "Local",
+            "Police Station",
+            "Central Monitoring Station"
+        ],
+        "use_default_value_for_undefined": true        
+    },
+
+    {
+        "matching": {
+            "Automatic Sprinklers in all areas": "Full",
+            "Automatic sprinklers in all areas with some exceptions": "None",
+            "Class A": "None",
+            "Class A-Partial": "None",
+            "Class B": "Full",
+            "Class B-Full": "Full",
+            "None": "None"      
+        },
+        "new_question": "sprinkler_system",
+        "original_question": "sprinkler_system",
+        "default_value": "None",
+        "possible_values": [
+            "None",
+            "Full"
+        ],
+        "use_default_value_for_undefined": true        
+    },
+
+    {
+        "matching": {
+            "1": "1",
+            "1-1/2": "1",
+            "2": "2",
+            "2-1/2": "2",
+            "3": "3",
+            "3-1/2": "3",
+            "4": "4",
+            "5-and-up": "5",
+            "bi-level": "2",
+            "split-level": "2",
+            "tri-level": "3"
+        },
+        "new_question": "prop_stories",
+        "original_question": "prop_stories",
+        "default_value": "1",
+        "possible_values": [
+            "1",
+            "2",
+            "3",
+            "4",
+            "5"
+        ],
+        "use_default_value_for_undefined": true
+    }
+]

@@ -16,11 +16,10 @@ const login = (url, user, password) => {
         }).then((response) => {
             const status = response.status;
             if (status === 200) {
-                fs.writeFile('./data/0/tokens.json', JSON.stringify(response.data, null, 2), err => {
-                    if (err) throw err;
-                });
-                log('Login successfully! - Token has been saved');
-
+                // fs.writeFile('./data/0/tokens.json', JSON.stringify(response.data, null, 2), err => {
+                //     if (err) throw err;
+                // });
+                // log('Login successfully! - Token has been saved');
                 if (response.data.hasOwnProperty('accessToken')) {
                     return response.data.accessToken
                 }
