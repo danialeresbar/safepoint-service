@@ -21,7 +21,6 @@ API service to get quotes from [Safepoint](https://uat.safepointdc.com/IntelAgen
 ├── package.json
 ├── package-lock.json
 ├── README.md
-
 ```
 
 ## How to run
@@ -34,10 +33,9 @@ Follow the steps below to run the service in your local environment:
 
 - Run the **app.js** file with ```node app.js``` 
 
-
 ## Docker Image
 
-Last tag *coming soon*
+Last tag: *coming soon*
 
 ## Author
 
