@@ -104,6 +104,5 @@ dist
 .tern-port
 
 # Custom
-*tokens.json
-*response.json
+data
 .idea/
